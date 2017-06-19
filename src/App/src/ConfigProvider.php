@@ -34,10 +34,19 @@ class ConfigProvider
     {
         return [
             'invokables' => [
-                Action\PingAction::class => Action\PingAction::class,
+                Action\PingAction::class         => Action\PingAction::class,
+                Service\CurriculumService::class => Service\CurriculumService::class,
             ],
             'factories'  => [
-                Action\HomePageAction::class => Action\HomePageFactory::class,
+                Action\HomeAction::class       => Factory\HomeFactory::class,
+                Action\ContactAction::class    => Factory\ContactFactory::class,
+                Action\CursoLivreAction::class => Factory\CursoLivreFactory::class,
+                Action\EducationAction::class  => Factory\EducationFactory::class,
+                Action\ExperienceAction::class => Factory\ExperienceFactory::class,
+                Action\HobbyAction::class      => Factory\HobbyFactory::class,
+                Action\LanguageAction::class   => Factory\LanguageFactory::class,
+                Action\SkillAction::class      => Factory\SkillFactory::class,
+                Action\CurriculumAction::class => Factory\CurriculumFactory::class,
             ],
         ];
     }

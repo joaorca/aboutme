@@ -26,5 +26,12 @@
  * );
  */
 
-$app->get('/', App\Action\HomePageAction::class, 'home');
-$app->get('/api/ping', App\Action\PingAction::class, 'api.ping');
+$app->get('/', App\Action\HomeAction::class, 'home');
+$app->get('/api/contact', App\Action\ContactAction::class, 'api-contacct');
+$app->get('/api/cursolivre', App\Action\CursoLivreAction::class, 'api-cursolivre');
+$app->get('/api/education', App\Action\EducationAction::class, 'api-education');
+$app->get('/api/experience', App\Action\ExperienceAction::class, 'api-experience');
+$app->get('/api/hobby', App\Action\HobbyAction::class, 'api-hobby');
+$app->get('/api/language', App\Action\LanguageAction::class, 'api-language');
+$app->get('/api/skill', App\Action\SkillAction::class, 'api-skill');
+$app->get('/api/curriculum', App\Action\CurriculumAction::class, 'api-curriculum');
