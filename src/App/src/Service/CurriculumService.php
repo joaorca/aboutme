@@ -16,7 +16,7 @@ class CurriculumService
 {
     public function getCurriculum()
     {
-        //$aboutMe = ['aboutMe' => $this->getAboutMe()];
+        $aboutMe = ['aboutMe' => $this->getAboutMe()];
         $contact = ['contact' => $this->getContact()];
         $cursoLivre = ['cursoLivre' => $this->getCursoLivre()];
         $education = ['education' => $this->getEducation()];
@@ -25,12 +25,12 @@ class CurriculumService
         $language = ['language' => $this->getLanguage()];
         $skill = ['skill' => $this->getSkill()];
 
-        return array_merge($contact, $cursoLivre, $education, $experience, $hobby, $language, $skill);
+        return array_merge($aboutMe, $contact, $cursoLivre, $education, $experience, $hobby, $language, $skill);
     }
 
     private function getAboutMe()
     {
-        //return (new AboutMeRepository)->getData();
+        return (new AboutMeRepository)->getData();
     }
 
     private function getContact()

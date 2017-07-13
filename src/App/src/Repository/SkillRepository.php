@@ -17,10 +17,13 @@ class SkillRepository implements RepositoryInterface
             ['percent' => 0.6, 'description' => 'CVS'],
             ['percent' => 0.5, 'description' => 'Scrum'],
             ['percent' => 0.4, 'description' => 'Vagrant'],
-            ['percent' => 0.4, 'description' => 'Docker'],
-            ['percent' => 0.2, 'description' => 'Laravel'],
+            ['percent' => 0.5, 'description' => 'Docker'],
+            ['percent' => 0.3, 'description' => 'Laravel'],
             ['percent' => 0.2, 'description' => 'ZF 2'],
             ['percent' => 0.2, 'description' => 'ZF 3'],
+            ['percent' => 0.4, 'description' => 'jQuery'],
+            ['percent' => 0.4, 'description' => 'PrototypeJS'],
+            ['percent' => 0.4, 'description' => 'SmartyPHP'],
         ];
 
         foreach ($data as $key => $row) {

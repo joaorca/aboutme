@@ -36,7 +36,7 @@
 
             <!-- ABOUT ME -->
             <div class="box">
-                <h2>About Me</h2>
+                <h2>Sobre mim</h2>
                 <p><?php echo $this->aboutMe['description']; ?></p>
             </div>
 
@@ -73,13 +73,14 @@
                 <?php endforeach; ?>
             </div>
 
+            <!-- CURSOS LIVRES -->
             <div class="box">
                 <h2>Cursos Livres</h2>
                 <?php foreach ($this->cursoLivre as $item) : ?>
                 <div class="job clearfix">
                     <div class="col-xs-12">
-                        <div class="profession"><?php echo $item['info1'] ?></div>
-                        <div class="description"><?php echo $item['info2'] ?></div>
+                        <div class="profession"><?php echo $item['course'] ?></div>
+                        <div class="description"><?php echo $item['where'] ?>, concluído em <?php echo $item['year'] ?></div>
                     </div>
                 </div>
                 <?php endforeach; ?>
