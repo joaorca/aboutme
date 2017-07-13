@@ -3,6 +3,7 @@
 
 namespace App\Service;
 
+use App\Repository\AboutMeRepository;
 use App\Repository\ContactRepository;
 use App\Repository\CursoLivreRepository;
 use App\Repository\EducationRepository;
@@ -15,6 +16,7 @@ class CurriculumService
 {
     public function getCurriculum()
     {
+        //$aboutMe = ['aboutMe' => $this->getAboutMe()];
         $contact = ['contact' => $this->getContact()];
         $cursoLivre = ['cursoLivre' => $this->getCursoLivre()];
         $education = ['education' => $this->getEducation()];
@@ -24,6 +26,11 @@ class CurriculumService
         $skill = ['skill' => $this->getSkill()];
 
         return array_merge($contact, $cursoLivre, $education, $experience, $hobby, $language, $skill);
+    }
+
+    private function getAboutMe()
+    {
+        //return (new AboutMeRepository)->getData();
     }
 
     private function getContact()

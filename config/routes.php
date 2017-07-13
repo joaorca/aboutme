@@ -27,6 +27,7 @@
  */
 
 $app->get('/', App\Action\HomeAction::class, 'home');
+$app->get('/api/aboutme', App\Action\AboutMeAction::class, 'api-aboutme');
 $app->get('/api/contact', App\Action\ContactAction::class, 'api-contacct');
 $app->get('/api/cursolivre', App\Action\CursoLivreAction::class, 'api-cursolivre');
 $app->get('/api/education', App\Action\EducationAction::class, 'api-education');

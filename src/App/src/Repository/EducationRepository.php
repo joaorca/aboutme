@@ -11,7 +11,7 @@ class EducationRepository implements RepositoryInterface
         return [
             [
                 'ano'         => 2001,
-                'titulo'      => 'Técnino em Processamento de dados',
+                'titulo'      => 'Técnino em Processamento de Dados',
                 'nivel'       => 'Ensino Médio',
                 'instituicao' => 'Colégio da Cidade'
             ],

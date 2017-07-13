@@ -39,6 +39,7 @@ class ConfigProvider
             ],
             'factories'  => [
                 Action\HomeAction::class       => Factory\HomeFactory::class,
+                Action\AboutMeAction::class    => Factory\AboutMeFactory::class,
                 Action\ContactAction::class    => Factory\ContactFactory::class,
                 Action\CursoLivreAction::class => Factory\CursoLivreFactory::class,
                 Action\EducationAction::class  => Factory\EducationFactory::class,
