@@ -30,12 +30,12 @@ class CurriculumService
 
     private function getAboutMe()
     {
-        return (new AboutMeRepository)->getData();
+        return (new AboutMeRepository())->getData();
     }
 
     private function getContact()
     {
-        return (new ContactRepository)->getData();
+        return (new ContactRepository())->getData();
     }
 
     private function getCursoLivre()

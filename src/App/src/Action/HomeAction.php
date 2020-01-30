@@ -26,7 +26,7 @@ class HomeAction implements ServerMiddlewareInterface
      * @param Template\TemplateRendererInterface|null $template
      * @param CurriculumService $service
      */
-    public function __construct(Template\TemplateRendererInterface $template = null, CurriculumService $service)
+    public function __construct(Template\TemplateRendererInterface $template, CurriculumService $service)
     {
         $this->template = $template;
         $this->service = $service;
